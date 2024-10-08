@@ -32,16 +32,16 @@ public class RecargaAbono extends javax.swing.JFrame {
 
         jPasswordField1 = new javax.swing.JPasswordField();
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jSeparator1 = new javax.swing.JSeparator();
+        TextoPrincipal = new javax.swing.JLabel();
+        BotonRecarga = new javax.swing.JButton();
+        TextoTarjeta = new javax.swing.JLabel();
+        CampoNumTarjeta = new javax.swing.JTextField();
+        LogoApp = new javax.swing.JLabel();
+        ImagenTarjeta01 = new javax.swing.JLabel();
+        ImagenTarjeta02 = new javax.swing.JLabel();
+        Separador = new javax.swing.JSeparator();
         jMonthChooser1 = new com.toedter.calendar.JMonthChooser();
-        jLabel5 = new javax.swing.JLabel();
+        TextoSeleccionMes = new javax.swing.JLabel();
 
         jPasswordField1.setText("jPasswordField1");
 
@@ -55,35 +55,35 @@ public class RecargaAbono extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(241, 234, 226));
         jPanel1.setPreferredSize(new java.awt.Dimension(615, 400));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
-        jLabel1.setText("Recarga online de su abono mensual del transporte urbano");
-        jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        TextoPrincipal.setFont(new java.awt.Font("Segoe UI", 1, 13)); // NOI18N
+        TextoPrincipal.setText("Recarga online de su abono mensual del transporte urbano");
+        TextoPrincipal.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
-        jButton1.setLabel("Recargar abono");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        BotonRecarga.setLabel("Recargar abono");
+        BotonRecarga.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                BotonRecargaActionPerformed(evt);
             }
         });
 
-        jLabel2.setText("Número de tarjeta:");
+        TextoTarjeta.setText("Número de tarjeta:");
 
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        CampoNumTarjeta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                CampoNumTarjetaActionPerformed(evt);
             }
         });
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Logo1.png"))); // NOI18N
+        LogoApp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Logo1.png"))); // NOI18N
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/tarjetaconsorcio01.png"))); // NOI18N
+        ImagenTarjeta01.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/tarjetaconsorcio01.png"))); // NOI18N
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/tarjetaBus01.jpg"))); // NOI18N
+        ImagenTarjeta02.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/tarjetaBus01.jpg"))); // NOI18N
 
         jMonthChooser1.setMonth(0);
         jMonthChooser1.setName(""); // NOI18N
 
-        jLabel5.setText("Seleccione el mes:");
+        TextoSeleccionMes.setText("Seleccione el mes:");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -93,23 +93,23 @@ public class RecargaAbono extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(114, 114, 114)
-                        .addComponent(jLabel1))
+                        .addComponent(TextoPrincipal))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(27, 27, 27)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 544, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Separador, javax.swing.GroupLayout.PREFERRED_SIZE, 544, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel2)
+                                .addComponent(TextoTarjeta)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jLabel4)
+                                        .addComponent(ImagenTarjeta01)
                                         .addGap(28, 28, 28)
-                                        .addComponent(jLabel6))
-                                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                        .addComponent(ImagenTarjeta02))
+                                    .addComponent(CampoNumTarjeta, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(309, 309, 309)
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(TextoSeleccionMes, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(jMonthChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(21, Short.MAX_VALUE))
@@ -117,34 +117,34 @@ public class RecargaAbono extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(261, 261, 261)
-                        .addComponent(jLabel3))
+                        .addComponent(LogoApp))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(242, 242, 242)
-                        .addComponent(jButton1)))
+                        .addComponent(BotonRecarga)))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
-                .addComponent(jLabel3)
+                .addComponent(LogoApp)
                 .addGap(22, 22, 22)
-                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Separador, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel1)
+                .addComponent(TextoPrincipal)
                 .addGap(33, 33, 33)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel6))
+                    .addComponent(ImagenTarjeta01)
+                    .addComponent(ImagenTarjeta02))
                 .addGap(63, 63, 63)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel2)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel5))
+                        .addComponent(TextoTarjeta)
+                        .addComponent(CampoNumTarjeta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(TextoSeleccionMes))
                     .addComponent(jMonthChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(46, 46, 46)
-                .addComponent(jButton1)
+                .addComponent(BotonRecarga)
                 .addContainerGap(276, Short.MAX_VALUE))
         );
 
@@ -159,26 +159,26 @@ public class RecargaAbono extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        
+    private void BotonRecargaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonRecargaActionPerformed
         // Obtener el número de tarjeta del JTextField
-        String numeroTarjeta = jTextField1.getText();
+        String numeroTarjeta = CampoNumTarjeta.getText();
         
         // Obtener el mes seleccionado del JMonthChooser
-        int mesSeleccionado = jMonthChooser1.getMonth(); // Devuelve un número entre 0 (Enero) y 11 (Diciembre)
+        int mesSeleccionado = jMonthChooser1.getMonth();
     
         // Convertir el número a nombre del mes
-        String[] meses = {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"};
+        String[] meses = {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", 
+            "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"};
         String nombreMes = meses[mesSeleccionado];
     
         // Mostrar el cuadro de diálogo con el mes seleccionado
-        JOptionPane.showMessageDialog(this, "Recarga realizada para el mes de " + nombreMes + " para la tarjeta número: " + numeroTarjeta);
+        JOptionPane.showMessageDialog(this, "Recarga realizada para el mes de " + 
+                nombreMes + " para la tarjeta número: " + numeroTarjeta);
+    }//GEN-LAST:event_BotonRecargaActionPerformed
 
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void CampoNumTarjetaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CampoNumTarjetaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_CampoNumTarjetaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -216,17 +216,17 @@ public class RecargaAbono extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
+    private javax.swing.JButton BotonRecarga;
+    private javax.swing.JTextField CampoNumTarjeta;
+    private javax.swing.JLabel ImagenTarjeta01;
+    private javax.swing.JLabel ImagenTarjeta02;
+    private javax.swing.JLabel LogoApp;
+    private javax.swing.JSeparator Separador;
+    private javax.swing.JLabel TextoPrincipal;
+    private javax.swing.JLabel TextoSeleccionMes;
+    private javax.swing.JLabel TextoTarjeta;
     private com.toedter.calendar.JMonthChooser jMonthChooser1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
